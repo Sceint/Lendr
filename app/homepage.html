@@ -1,184 +1,417 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Home</title>
-		<script src="./app.js"></script>
-		<link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.5.0" type="text/css" media="all"/>
-		<script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.5.0"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	</head>
-	<body>
-		<style>
-	body {
-	    background-color: #262626;
-		color: white;
-	}
+
+<head>
+	<title>Home</title>
+	<script src="./app.js"></script>
+	<link rel="stylesheet" id="compiled.css-css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.5.0" type="text/css" media="all" />
+	<script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.5.0"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+	<style>
+		body {
+			background-color: #262626;
+			color: white;
+		}
 	</style>
-		<ul class="nav md-pills nav-justified pills-elegant blue">
-			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#panel1" role="tab" style="color:white;">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#panel2" role="tab" style="color:white;">Loan Given</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#panel3" role="tab" style="color:white;">Loan Taken</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.html" role="tab" style="color:white;">Logout</a>
-			</li>
-		</ul>
-		<!-- Tab panels -->
-		<div class="tab-content">
-			<!--Panel 1-->
-			<div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-				<br/>
-				<div>Available Balance:
-            
-					
-					<h3 class="highlight" id="userBalance">0</h3>
-				</div>
-				<br/>
-				<div>Defaulted Balance:
-            
-					
-					<h3 class="highlight" id="defaultedBalance">0</h3>
-				</div>
-				<table class="table">
-					<thead class="cyan" style="color:#161616;">
-						<tr>
-							<th>#</th>
-							<th>User Name</th>
-							<th>Loan Description</th>
-							<th>Loan Amount</th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-							<td>
-								<button type="button" class="btn btn-success btn-sm my-0">Submit a Proposal</button>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-							<td>
-								<button type="button" class="btn btn-success btn-sm my-0">Submit a Proposal</button>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-							<td>
-								<button type="button" class="btn btn-success btn-sm my-0">Submit a Proposal</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!--/.Panel 1-->
-			<!--Panel 2-->
-			<div class="tab-pane fade" id="panel2" role="tabpanel">
-				<br/>
-				<table class="table">
-					<thead class="cyan" style="color:#161616;">
-						<tr>
-							<th>#</th>
-							<th>User Name</th>
-							<th>Loan Description</th>
-                            <th>Loan Amount</th>
-                            <th>Interest Rate</th>
-                            <th>Date Given</th>
-							<!-- <th></th> -->
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-                            <td>@mdo</td>
-                            <th>10%</th>
-                            <th>23-12-2017</th>
-							<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-                            <td>@fat</td>
-                            <th>25%</th>
-                            <th>12-01-2016</th>
-							<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-                            <td>@twitter</td>
-                            <th>2%</th>
-                            <th>02-08-2009</th>
-							<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!--/.Panel 2-->
-			<!--Panel 3-->
-			<div class="tab-pane fade" id="panel3" role="tabpanel">
-				<br/>
-				<table class="table">
-					<thead class="cyan" style="color:#161616;">
-						<tr>
-							<th>#</th>
-							<th>User Name</th>
-							<th>Loan Description</th>
-                            <th>Loan Amount</th>
-                            <th>Interest Rate</th>
-                            <th>Date Taken</th>
-							 <th></th> 
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-                            <td>@mdo</td>
-                            <th>10%</th>
-                            <th>23-12-2017</th>
-							<td><button type="button" class="btn btn-primary btn-sm my-0">Pay Loan</button></td> 
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-                            <td>@fat</td>
-                            <th>25%</th>
-                            <th>12-01-2016</th>
-                            <td><button type="button" class="btn btn-primary btn-sm my-0">Pay Loan</button></td> 
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-                            <td>@twitter</td>
-                            <th>2%</th>
-                            <th>02-08-2009</th><td><button type="button" class="btn btn-primary btn-sm my-0">Pay Loan</button></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<!--/.Panel 3-->
+	<ul class="nav md-pills nav-justified pills-elegant blue">
+		<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab" style="color:white;">Home</a> </li>
+		<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#panel2" role="tab" style="color:white;">Loan Given</a> </li>
+		<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#panel3" role="tab" style="color:white;">Loan Taken</a> </li>
+		<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#panel4" role="tab" style="color:white;">Loan Requested</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="index.html" role="tab" style="color:white;">Logout</a> </li>
+	</ul>
+	<!-- Tab panels -->
+	<div class="tab-content">
+		<!--Panel 1-->
+		<div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+			<br/>
+			<button type="button" class="btn btn-primary btn-lr my-0 pull-right" data-toggle="modal" data-target="#loanRequest">Request a Loan</button>
+			<div>Available Balance:
+				<h3 class="highlight" id="userBalance">0</h3> </div>
+			<div>Defaulted Balance:
+				<h3 class="highlight" id="defaultedBalance">0</h3> </div>
+			<table class="table table-borderless">
+				<thead class="cyan" style="color:#161616;">
+					<tr>
+						<th>#</th>
+						<th>User Name</th>
+						<th>Loan Description</th>
+						<th>Loan Amount</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>$ 200</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#submitProposal">Submit a Proposal</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>$ 1200</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#submitProposal">Submit a Proposal</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>$ 124</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#submitProposal">Submit a Proposal</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-	</body>
+		<!--/.Panel 1-->
+		<!--Panel 2-->
+		<div class="tab-pane fade" id="panel2" role="tabpanel">
+			<br/>
+			<table class="table table-hover">
+				<thead class="cyan" style="color:#161616;">
+					<tr data-toggle="modal">
+						<th>#</th>
+						<th>User Name</th>
+						<th>Loan Description</th>
+						<th>Loan Amount</th>
+						<th>Interest Rate</th>
+						<th>Date Given</th>
+						<!-- <th></th> -->
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-toggle="modal" data-target="#showLoanGivenInfo">
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>$ 200</td>
+						<th>10%</th>
+						<th>23-12-2017</th>
+						<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
+					</tr>
+					<tr data-toggle="modal" data-target="#showLoanGivenInfo">
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>$ 1200</td>
+						<th>25%</th>
+						<th>12-01-2016</th>
+						<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
+					</tr>
+					<tr data-toggle="modal" data-target="#showLoanGivenInfo">
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>$ 124</td>
+						<th>2%</th>
+						<th>02-08-2009</th>
+						<!-- <td><button type="button" class="btn btn-success btn-sm my-0"><Cancel Loan>/button></td> -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--/.Panel 2-->
+		<!--Panel 3-->
+		<div class="tab-pane fade" id="panel3" role="tabpanel">
+			<br/>
+			<table class="table">
+				<thead class="cyan" style="color:#161616;">
+					<tr>
+						<th>#</th>
+						<th>User Name</th>
+						<th>Loan Description</th>
+						<th>Loan Amount</th>
+						<th>Interest Rate</th>
+						<th>Date Taken</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>$ 200</td>
+						<th>10%</th>
+						<th>23-12-2017</th>
+						<td>
+							<button type="button" class="btn btn-primary btn-sm my-0" data-toggle="modal" data-target="#payLoan">Pay Loan</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>$ 1200</td>
+						<th>25%</th>
+						<th>12-01-2016</th>
+						<td>
+							<button type="button" class="btn btn-primary btn-sm my-0" data-toggle="modal" data-target="#payLoan">Pay Loan</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>$ 124</td>
+						<th>2%</th>
+						<th>02-08-2009</th>
+						<td>
+							<button type="button" class="btn btn-primary btn-sm my-0" data-toggle="modal" data-target="#payLoan">Pay Loan</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--/.Panel 3-->
+		<!--Panel 4-->
+		<div class="tab-pane fade" id="panel4" role="tabpanel">
+			<br/>
+			<table class="table">
+				<thead class="cyan" style="color:#161616;">
+					<tr>
+						<th>#</th>
+						<th>Loan Description</th>
+						<th>Loan Amount</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Otto</td>
+						<td>$ 200</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#selectProposal">Select a Proposal</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Thornton</td>
+						<td>$ 1200</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#selectProposal">Select a Proposal</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>the Bird</td>
+						<td>$ 124</td>
+						<td>
+							<button type="button" class="btn btn-success btn-sm my-0" data-toggle="modal" data-target="#selectProposal">Select a Proposal</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--/.Panel 4-->
+	</div>
+	<!-- Show Loan Info -->
+	<div class="modal fade" id="showLoanGivenInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-info" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="heading lead">Loan Info</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="white-text">&times;</span> </button>
+				</div>
+				<div class="modal-body" style="background-color:#262626; color:white;">
+					<div class="text-center">
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<th class="text-left">Username &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">Mark</td>
+								</tr>
+								<tr>
+									<th class="text-left">Loan Description &nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">Otto</td>
+								</tr>
+								<tr>
+									<th class="text-left">Loan Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">$ 200</td>
+								</tr>
+								<tr>
+									<th class="text-left">Interest Rate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">10%</td>
+								</tr>
+								<tr>
+									<th class="text-left">Date Given &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">23-12-2017</td>
+								</tr>
+								<tr>
+									<th class="text-left">Amount Left &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">$ 20</td>
+								</tr>
+								<tr>
+									<th class="text-left">Amount Paid &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+									<td class="text-left">$ 120</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center" style="background-color:#262626;"> <a type="button" class="btn btn-outline-primary waves-effect pull-center" data-dismiss="modal">Ok</a> </div>
+			</div>
+		</div>
+	</div>
+	<!--/. Show Loan Info -->
+	<!-- Submit a Proposal -->
+	<div class="modal fade" id="submitProposal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-success" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="heading lead">Submit Proposal</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="white-text">&times;</span> </button>
+				</div>
+				<div class="modal-body" style="background-color:#262626; color:white;">
+					<form>
+						<label for="proposedAmount" class="grey-text">Amount :</label>
+						<input type="number" min="0.0" id="proposedAmount" class="form-control">
+						<br/>
+						<label for="proposedInterest" class="grey-text">Interest :</label>
+						<input type="number" min="0.0" id="proposedInterest" class="form-control">
+						<div class="text-center mt-4">
+							<button class="btn btn-outline-success" type="submit" data-dismiss="modal">Submit Proposal</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/. Submit a Proposal -->
+	<!-- Request a Loan -->
+	<div class="modal fade" id="loanRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-info" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="heading lead">Request Loan</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="white-text">&times;</span> </button>
+				</div>
+				<div class="modal-body" style="background-color:#262626; color:white;">
+					<form>
+						<label for="loanDesc" class="grey-text">Description :</label>
+						<input type="text" maxlength="30" id="loanDesc" class="form-control">
+						<br/>
+						<label for="loanAmount" class="grey-text">Amount :</label>
+						<input type="number" min="0.0" id="loanAmount" class="form-control">
+						<div class="text-center mt-4">
+							<button class="btn btn-outline-info" type="submit" data-dismiss="modal">Submit Request</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/. Request a Loan -->
+	<!-- Pay Loan -->
+	<div class="modal fade" id="payLoan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-info" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="heading lead">Pay Loan</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="white-text">&times;</span> </button>
+				</div>
+				<div class="modal-body" style="background-color:#262626; color:white;">
+					<table class="table table-striped">
+						<tbody>
+							<tr>
+								<th class="text-left">Loan Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+								<td class="text-left">$ 200</td>
+							</tr>
+							<tr>
+								<th class="text-left">Interest Rate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+								<td class="text-left">10%</td>
+							</tr>
+							<tr>
+								<th class="text-left">Amount to Pay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+								<td class="text-left">$ 100</td>
+							</tr>
+							<tr>
+								<th class="text-left">Amount Paid &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+								<td class="text-left">$ 150</td>
+							</tr>
+							<tr>
+								<th class="text-left">Amount Left to Pay &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </th>
+								<td class="text-left">$ 120</td>
+							</tr>
+						</tbody>
+					</table>
+					<form>
+						<label for="loanAmountToPay" class="grey-text">Amount :</label>
+						<input type="number" min="0.0" id="loanAmountToPay" class="form-control">
+						<div class="text-center mt-4">
+							<button class="btn btn-outline-info" type="submit" data-dismiss="modal">Pay Loan</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/. Pay Loan -->
+	<!-- Show Proposal -->
+	<div class="modal fade" id="selectProposal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-success" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="heading lead">Show Proposals</p>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true" class="white-text">&times;</span> </button>
+				</div>
+				<div class="modal-body" style="background-color:#262626; color:white;">
+					<div class="text-center">
+						<table class="table">
+							<thead class="green" style="color:#161616;">
+								<tr>
+									<th>#</th>
+									<th>Loan Amount</th>
+									<th>Loan Interest</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>$ 200</td>
+									<td>10%</td>
+									<td>
+										<button type="button" class="btn btn-success btn-sm my-0" data-dismiss="modal">Select this Proposal</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>$ 1200</td>
+									<td>12%</td>
+									<td>
+										<button type="button" class="btn btn-success btn-sm my-0" data-dismiss="modal">Select this Proposal</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>$ 124</td>
+									<td>20%</td>
+									<td>
+										<button type="button" class="btn btn-success btn-sm my-0" data-dismiss="modal">Select this Proposal</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center" style="background-color:#262626;"> <a type="button" class="btn btn-outline-success waves-effect pull-center" data-dismiss="modal">Ok</a> </div>
+			</div>
+		</div>
+	</div>
+	<!--/. Show Proposal -->
+</body>
+
 </html>
